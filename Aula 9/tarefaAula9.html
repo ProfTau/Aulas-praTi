@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tarefa de Casa 9</title>
+</head>
+<body>
+
+	<h2> Exercício 1</h2>
+	<button onclick="calcularEx1()">Calcular Ex 1</button>
+	<section id="result1">
+		<p>O resultado sai aqui</p>
+	</section>
+
+	<script type="text/javascript">
+		function calcularEx1() {
+			let equacao = 6 + 20 - 12 * 2;
+			let resultado = window.document.getElementById("result1");
+			resultado.innerHTML = `<p> ${equacao}</p>`;
+		}
+	</script>
+
+	<h2> Exercício 2</h2>
+	<button onclick="calcularEx2()">Calcular Ex 2</button>
+	<section id="result2">
+		<p>O resultado sai aqui</p>
+	</section>
+
+	<script type="text/javascript">
+		function calcularEx2() {
+			//30 ÷ [10 + (2 + 3)]
+			let equacao = 30 / (10 + (2 + 3));
+			let resultado = window.document.getElementById("result2");
+			resultado.innerHTML = `<p> ${equacao}</p>`;
+		}
+	</script>
+
+	<h2> Exercício 3</h2>
+	<button onclick="calcularEx3()">Calcular Ex 3</button>
+	<section id="result3">
+		<p>O resultado sai aqui</p>
+	</section>
+
+	<script type="text/javascript">
+		function calcularEx3() {
+			//[(18 + 3 · 2) ÷ 8 + 5 · 3] ÷ 6
+			let equacao = ((18 + 3 * 2) / 8 + 5 * 3) / 6;
+			let resultado = window.document.getElementById("result3");
+			resultado.innerHTML = `<p> ${equacao}</p>`;
+		}
+	</script>
+
+	<h2> Exercício 4</h2>
+	<button onclick="calcularEx4()">Calcular Ex 4</button>
+	<section id="result4">
+		<p>O resultado sai aqui</p>
+	</section>
+
+	<script type="text/javascript">
+		function calcularEx4() {
+			//[(64 - 16·4) + (48·10 - 180)]·5
+			let equacao = ((64 - 16 * 4) + (48 * 10 - 180)) * 5;
+			let resultado = window.document.getElementById("result4");
+			resultado.innerHTML = `<p> ${equacao}</p>`;
+		}
+	</script>
+
+	<h2> Exercício 5</h2>
+	<button onclick="calcularEx5()">Calcular Ex 5</button>
+	<section id="result5">
+		<p>O resultado sai aqui</p>
+	</section>
+
+	<script type="text/javascript">
+		function calcularEx5() {
+			//{[(8 · 4 + 3) ÷ 7 + (3 + 15 ÷ 5) · 3] · 2 - (19 - 7) ÷ 6} · 2 + 12
+			let equacao = (((8 * 4 + 3) / 7 + (3 + 15 / 5) * 3) * 2 - (19 - 7) / 6) * 2 + 12;
+			let resultado = window.document.getElementById("result5");
+			resultado.innerHTML = `<p> ${equacao}</p>`;
+		}
+	</script>
+
+</body>
+</html>

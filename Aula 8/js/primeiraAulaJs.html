@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Primeiros Programas JavaScript</title>
+
+	<!-- usado para linkar à script externo -->
+	<script type="text/javascript" src="primeiroScript.js"></script>
+
+	<!-- script dentro da head -->
+	<script type="text/javascript">
+		function mudarParagrafo()
+		{
+			document.getElementById("p1").innerHTML = "Este parágrafo foi Modificado"
+		}
+	</script>
+
+</head>
+<body>
+
+	<!-- modificando um elemento HTML usando a ação onclick para chamar uma função -->
+	<p id="p1">Isto é um parágrafo</p>
+	<button type="button" onclick="mudarParagrafo()">Clique Aqui</button>
+
+	<p id="p2"> </p>
+	<script type="text/javascript">
+		//mostra o cálculo dentro do parágrafo sem precisar do botão
+		document.getElementById("p2").innerHTML = 5 + 6;
+	</script>
+
+	<p>Testando document.write() sozinho</p>
+	<script type="text/javascript">
+		//mostra o cálculo avulso, sem parágrafo
+		document.write(5 + 6);
+	</script>
+
+	<!-- não pode ser usado em situações que aciona o document.write após a página ser carregada, pois apaga o conteúdo da página -->
+	<p>Testando document.write() dentro de um botão</p>
+	<button type="button" onclick="document.write(5 + 6)">Clique Aqui</button>
+
+	<p>testando window.alert()</p>
+	<script type="text/javascript">
+		window.alert(5 + 6);
+	</script>
+
+	<p>Testando console.log</p>
+	<script type="text/javascript">
+		console.log(5 + 6);
+	</script>
+
+	<script type="text/javascript">
+		document.write( 1 + 2 );
+		document.write( 3 + 4 );
+		document.write( 5 + 6 );
+
+		//a declaração pode ser feita em uma linha só, não altera o resultado
+		document.write( 1 + 2 ); document.write(3 + 4); document.write(5 + 6);
+	</script>
+
+	<p>Testando SEM espaço em branco</p>
+	<script type="text/javascript">
+		document.write("Sem espaço");
+	</script>
+	<p>Testando COM espaço em branco</p>
+	<script type="text/javascript">
+		//o espaço não implica no resultado exibido no navegador
+		//espaços podem ser utilizados para aumentar a legibilidade do código,
+		//mas consomem mais espaço do arquivo
+		document.write( "COM espaço" );
+	</script>
+
+	<p>Valores Literais</p>
+	<script type="text/javascript">
+		document.write(100);
+		document.write(10.1);
+		document.write("Eu sou literal");
+		document.write('Eu também sou literal');
+	</script>
+
+	<p>Valores Variaveis</p>
+	<script type="text/javascript">
+		let numero1 = 15; //declara a variável e atribui o valor
+		let numero2; //declara a variável
+		numero2 = 21; //atribui o valor depois
+
+		(15 + 21) * 3; //equação exemplo sem variável
+		(numero1 + numero2) * 3; //equação utilizando as variáveis
+	</script>
+
+	<p>Comentários</p>
+	<script type="text/javascript">
+		//comentário de uma linha só
+
+		/*
+		comentário
+		com
+		múltiplas
+		linhas
+		*/
+	</script>
+
+	<p>Nomes e Identificadores</p>
+	<script type="text/javascript">
+		//iniciar com letras do alfabeto (a-z)
+		//pode inciar com cifrão $
+		//pode iniciar com underline
+		//não pode iniciar com números
+		//não pode hífen ou operadores aritmeticos
+		//não pode pontuação e acentuação
+		//não pode ter espaçamento
+
+		//Exemplos de variáveis utilizando Camel Case e Underline:
+
+		let nome = "Ana";
+		let primeiro_nome = "Ana"; //usando Under Line
+		let primeiroNome = "Ana";
+
+		let primeironome = "Bento";
+
+		let PrimeiroNome = "Carol"; //Upper Camel Case
+		let primeiroNome2 = "Davi"; //Lower Camel Case
+
+	</script>
+
+</body>
+</html>
